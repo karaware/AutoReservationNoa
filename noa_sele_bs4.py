@@ -72,6 +72,7 @@ if result2:
     print('空いてます')
 else:
     print('満員でした')
+    browser.close()
     sys.exit()
 
 
@@ -89,6 +90,7 @@ for item3 in splitline_item2:
     else:
         result3 = False
         print('満員でした')
+        browser.close()
         sys.exit()
 
 #対象のjavascript文のみ取得
@@ -114,3 +116,5 @@ browser.execute_script(result_item4)
 #予約確認ボタンクリック
 browser.find_element_by_name("送　信").click()
 print('予約できました。')
+
+browser.close()
