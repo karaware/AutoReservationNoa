@@ -10,8 +10,9 @@ import re
 rservation_day = sys.argv[1]
 rservation_time = sys.argv[2]
 
-username = "0095848"
-password = "1112"
+##usernameとpasswordにログインIDとパスワードを入れる
+username = ""
+password = ""
 URL = "https://noah1.lan.jp/web/login.php"
 
 webdriver = selenium.webdriver
